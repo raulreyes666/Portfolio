@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');   
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+  }
+  
+  .tech-logo {
+    font-size: 110px;
+    transition: font-size 0.2s ease-in-out;
+}
+
+.tech-logo:hover {
+    font-size: 125px;
+}
+
+  .tech-item {
+    text-align: center;
+    text-decoration: none;
+    
+  }
+  
+  .tech-item p {
+    color: white;
+    margin-top: 10px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @media (max-width: 768px) {
+   .tech-stack{
+    flex-wrap: wrap;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   } 
+   .tech-logo {
+    font-size: 80px;
+    transition: font-size 0.2s ease-in-out;
+}
+
+.tech-logo:hover {
+    font-size: 85px;
+}
+
+  }

@@ -1,0 +1,108 @@
+.TitleProjects{
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* Asegura que todos los items tengan la misma altura */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projectx {
+    flex: 1 1 calc(50% - 40px); /* Toma el 50% del ancho menos el gap */
+    display: flex;
+    justify-content: center;
+    position: relative; /* Para que el overlay se posicione correctamente */
+}
+
+.projects-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido de manera uniforme */
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    min-height: 250px; /* Establece una altura mínima */
+    width: 100%;
+}
+
+.projectName {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+.img-project {
+    width: 100%;
+    height: 400px;
+    align-self: center;
+    border-radius: 10px;
+    position: relative; /* Para que el overlay se posicione correctamente */
+    z-index: 1; /* Asegura que la imagen esté debajo del overlay */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Efecto de transición */
+    z-index: 2; /* Asegura que el overlay esté encima de la imagen */
+}
+
+.projectx:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+}
+.text:hover{
+    cursor: pointer;
+
+    color: rgb(255, 255, 255);
+    transition: step-end 2s ease-in-ou;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.img-project:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .projectx {
+        flex: 1 1 100%; /* Ocupa el 100% del ancho en mobile */
+    }
+
+    .img-project {
+        height: 200px;
+    }
+
+    .projects-items {
+        min-height: 200px; /* Ajusta la altura mínima para dispositivos móviles si es necesario */
+    }
+}
