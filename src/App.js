@@ -1,10 +1,10 @@
-import logo from './media/Icon.png';
 import './App.css';
 import NavBar from './components/NavBar';
 import Stack from './components/Stack';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import City from './api/City';
+import CallToAction from './components/CallToAction';
 
 
 function App() {
@@ -14,7 +14,9 @@ function App() {
       <AboutMe/>
       <Stack/>
       <Contact/>
+      <CallToAction/>
       <City/>
+
     </div>
   );
 }

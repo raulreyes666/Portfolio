@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/NavBar.css'
-import ContactMe from './ContactMe'
 
 const NavBar = () => {
 
@@ -15,7 +14,9 @@ const NavBar = () => {
     <div className='containerNav'>
       <button className='navElement' id='clicks' onClick={() => scrollToElement('Me')}>About me</button>
       <button className='navElement' onClick={() => scrollToElement('Skills')}>Skills</button>
-      <button className='navElement' onClick={() => scrollToElement('Experience')}>Projects</button>  
+      <button className='navElement' onClick={() => scrollToElement('Experience')}>Projects</button>
+      <button className='navElement' onClick={() => scrollToElement('Contact')}>Contact me</button>  
+
     </div>
     
   )
