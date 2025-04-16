@@ -9,7 +9,7 @@ const Contact = () => {
             link: 'https://github.com/raulreyes666/Mvp_workers'
         },
         {
-            name: 'Coordenada 9 Web page',
+            name: 'Coordenada 9 Web Site',
             description: 'The site allows users to place orders via phone, browse the virtual menu, and enjoy a beautifully designed interface crafted with pure CSS and Bootstrap, enhancing the user experience (UX).',
             img: 'https://res.cloudinary.com/dmro9tys5/image/upload/f_auto,q_auto/v1/portfolio/smg6tqjshryznahqzzpy',
             url: '#'
